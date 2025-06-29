@@ -1,6 +1,6 @@
 [build]
-  command = "npm run build"
+  command = "cd /opt/build/repo && npm ci && npm run build"
   publish = ".next"
-
+  
 [build.environment]
-  NPM_FLAGS = "--prefix=/opt/buildhome/.nodejs_global"
+  NODE_VERSION = "18"
